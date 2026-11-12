@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: freellmapi
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/ping
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: NODE_ENV
+        value: "production"
+      - key: ENCRYPTION_KEY
+        sync: false
