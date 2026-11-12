@@ -13,4 +13,4 @@ services:
       - key: NODE_ENV
         value: "production"
       - key: ENCRYPTION_KEY
-        sync: false
+        value: "f10791840da741d9a25a85fdef64cc779ae4b0de335d1bc7743413fd42d93ced"
